@@ -1,0 +1,8 @@
+{
+    "name": "montu/newproject",
+    "type": "project",
+    "require": {
+        "tecnickcom/tcpdf": "6.4.1"
+    },
+    "minimum-stability": "dev"
+}
