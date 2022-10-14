@@ -11,6 +11,6 @@
     $pdf->AddPage();
     $pdf->writeHTML($pdfString,true, false, true, false, '');
     $dir = addslashes(__DIR__);
-    $file = $dir."\\example_048.pdf";
+    $file = $dir."\/example_048.pdf";
     $pdf->Output($file, 'FD');
 ?>  
