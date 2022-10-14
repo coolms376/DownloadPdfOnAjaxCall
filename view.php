@@ -65,7 +65,7 @@
 
         displaybtn.addEventListener("click",function(list) {
 
-            fetch("http://localhost/new_project/api.php").then(data=>data.json()).then(data=>{
+            fetch("https://appservice35596995.azurewebsites.net/api.php").then(data=>data.json()).then(data=>{
                  for (i=0;i<data.length;i++)
                     createListItem(data[i])
             });
@@ -82,7 +82,7 @@
                 $.ajax({
                     type:'POST',
                     data:{"data":listdata},
-                    url:'http://localhost/new_project/one.php',
+                    url:'https://appservice35596995.azurewebsites.net/one.php',
                     xhrFields: {
                         responseType: 'blob' // to avoid binary data being mangled on charset conversion
                     },
